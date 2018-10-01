@@ -3,6 +3,7 @@ import { AppService } from './app.service';
 import { AuthModule } from './auth/auth.module';
 import { Module } from '@nestjs/common';
 import {TypeOrmModule} from '@nestjs/typeorm';
+import { User } from './auth/src/entity/User';
 
 @Module({
   imports: [
@@ -25,7 +26,7 @@ import {TypeOrmModule} from '@nestjs/typeorm';
       subscribers: [
         "src/subscriber/**/*.ts"
      ],
-    }),
+    })
   ],
   controllers: [AppController],
   providers: [AppService],
