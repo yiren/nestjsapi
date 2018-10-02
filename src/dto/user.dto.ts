@@ -1,4 +1,5 @@
+
 export class UserDTO{
-    userId:number;
-    username:string;
+    readonly username: string;
+    readonly title: string;
 }
